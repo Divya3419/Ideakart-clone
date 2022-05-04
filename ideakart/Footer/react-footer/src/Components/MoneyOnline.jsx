@@ -1,5 +1,6 @@
 import React from 'react'
 import styles from './FooterStyles.module.css'
+import {Footer} from './Footer'
 
 export const EarnMoneyOnline = () => {
   return (
@@ -102,6 +103,10 @@ export const EarnMoneyOnline = () => {
            <iframe className={styles.image} src="https://www.youtube.com/embed/TfQyg-DSHBo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
         <button className= {styles.button}>Get Started!</button>
+
+                       {/* here im importing footer  */}
+
+                      <Footer />
       </>
   )
 }

@@ -1,6 +1,10 @@
  import React from 'react'
  import styles from './FooterStyles.module.css'
+ import {Footer} from './Footer'
+
+
  export const PrivacyPolicy = () => {
+
   return (
    <>
      <div className={styles.Privacy_Main_Div}>
@@ -129,6 +133,10 @@
           </div>
 
      </div>
+           
+                       {/* here im importing footer  */}
+
+                <Footer />
    </>
   )
 }

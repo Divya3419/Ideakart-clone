@@ -1,5 +1,8 @@
 import React from 'react'
 import styles from './FooterStyles.module.css'
+import {Footer} from './Footer'
+
+
 export const RefundPolicy = () => {
   return (
     <>
@@ -62,6 +65,11 @@ export const RefundPolicy = () => {
 
         </div>
     </div>
+
+
+                       {/* here im importing footer  */}
+
+          <Footer />
     </>
   )
 }

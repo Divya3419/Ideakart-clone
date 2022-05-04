@@ -1,5 +1,9 @@
 import React from 'react'
 import styles from './FooterStyles.module.css'
+import {Footer} from './Footer'
+
+
+
 export const Search = () => {
   return (
       <>
@@ -16,6 +20,10 @@ export const Search = () => {
             </div>
       
       </div>
+ 
+                 {/* here im importing footer  */}
+
+            <Footer />
       </>
 
   )

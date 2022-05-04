@@ -1,42 +1,47 @@
 import React from "react";
 //import {Routes,Route} from 'react-router-dom';
 //import { PrivacyPolicy } from "./PrivacyPolicy";
+import styles from './FooterStyles.module.css'
 import { Link } from 'react-router-dom'
   
 export  const Footer = () => {
   return (
     
      <>
-      <p>Get To Know Us</p>
-     
-      <ul>
-      <li>
-            About
-
-            {/* <a href="/Search">About</a> */}
-      </li>
-      <li>
-            Contact
-      </li>
-      <li>  
-            <Link to = '/Search'> Search</Link>
-      </li>
-      <li>
-           <Link to = '/PrivacyPolicy'> Privacy Policy</Link>
-      </li>
-      <li>
-            
-            <Link to = '/RefundPolicy'>Refund Policy</Link>
-      </li>
-      <li>
+     <div className={styles.footer_main_div}>
            
-            <Link to = '/MoneyOnline'> Earn Money Online</Link>
-      </li>
-      <li>
-            QuickBuyer
-      </li>
-      
-      </ul>
+      <p className={styles.Get_to}>Get To Know Us</p>
+     
+     <ul>
+     <li>
+           
+           <Link className={styles.footer} to = '/'> About</Link>
+     </li>
+     <li>
+           
+           <Link className={styles.footer} to = '/'> Contact</Link>
+     </li>
+     <li>  
+           <Link className={styles.footer} to = '/Search'> Search</Link>
+     </li>
+     <li>
+          <Link  className={styles.footer} to = '/PrivacyPolicy'> Privacy Policy</Link>
+     </li>
+     <li>
+           
+           <Link className={styles.footer}  to = '/RefundPolicy'>Refund Policy</Link>
+     </li>
+     <li>
+          
+           <Link  className={styles.footer} to = '/MoneyOnline'> Earn Money Online</Link>
+     </li>
+     <li>
+         <Link className={styles.footer} to = '/'>  QuickBuyer</Link>
+          
+     </li>
+     
+     </ul>
+     </div>
 
       
      </>
@@ -44,10 +49,3 @@ export  const Footer = () => {
       );
 };
 
-// {/* <Route path={"/"}>Home</Route>
-// <Route to={"/about"}>About</Route>
-// <Route to={"/products"}>Products</Route>
-// <Route to={"/products/men"}>Men</Route>
-// <Route to={"/products/women"}>Women</Route>
-// <Route to={"/products/kids"}>Kids</Route>
-// <Route to={"/products/homedecor"}>Home Decor</Route> */}

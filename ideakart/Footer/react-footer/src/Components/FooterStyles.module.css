@@ -1,5 +1,21 @@
+.footer_main_div{
+    margin-left: 11%;
+    
 
-                 /* here is serch.jsx css */
+}
+.Get_to{
+    font-size: 20px;
+   
+}
+               
+ .footer{
+     text-decoration: none;
+     color:#6cb3e4;
+ }   
+ .footer:hover{
+  text-decoration: underline;
+ }           
+               /* here is serch.jsx css */
 
 .main_serch_div{
     display:flex;
