@@ -32,7 +32,7 @@ export const EarnMoneyOnline = () => {
                    Go to Dashboard    
                    </li>
                    <li className={styles.li}>
-                   Pick any product. For example mobile phone, or any item.   
+                   Pick any product. For example mobile <br/> phone, or any item.   
                    </li>
                    <li className={styles.li}>
                    Search for it in the Database.  
@@ -64,10 +64,10 @@ export const EarnMoneyOnline = () => {
                    Describe the product you just uploaded.
                    </li>
                    <li className={styles.li}>
-                   Mention from where you bought it, online or offline
+                   Mention from where you bought it, online <br/> or offline
                    </li>
                    <li className={styles.li}>
-                   A Video increases your chances of getting a product approved, but it is not mandatory to upload videos.   
+                   A Video increases your chances of getting <br/> a product approved, but it is not mandatory to upload videos.   
                    </li>                 
                </ul>
             </div>
