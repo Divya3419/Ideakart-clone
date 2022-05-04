@@ -1,6 +1,4 @@
 import React from "react";
-//import {Routes,Route} from 'react-router-dom';
-//import { PrivacyPolicy } from "./PrivacyPolicy";
 import styles from './FooterStyles.module.css'
 import { Link } from 'react-router-dom'
   
