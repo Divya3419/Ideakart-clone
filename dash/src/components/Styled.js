@@ -1,6 +1,8 @@
 import styled ,{css}from "styled-components"
 
-export const Cover=styled.div`
+//App
+export const Control=styled.div`
+border:2px solid black;
 display:grid;
 grid-template-columns:repeat(2,1fr);
 
@@ -9,14 +11,8 @@ margin:auto;
 margin-top:40px;
 `
 
-export const Dash=styled.div`
+//Home
 
-`
-export const Wel=styled.div`
-
-margin:auto;
-
-`
 export const Btn=styled.button`
 color:white;
 
@@ -58,5 +54,10 @@ ${(props)=>props.box3 && css`
 background-color: #e68787;
 color:white;
 `}
+
+`
+
+export const Credit=styled.div`
+border:2px solid black;
 
 `

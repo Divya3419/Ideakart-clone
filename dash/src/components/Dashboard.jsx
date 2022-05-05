@@ -1,26 +1,24 @@
 import React from 'react'
-import Home from '../pages/Home'
-import { Cover, Dash } from './Styled'
-import {Routes,Route} from "react-router-dom"
+
+
+import { Link } from "react-router-dom";
 
 const Dashboard = () => {
   return (
-    <Cover>
-      <Dash>
+    
+      <div>
         <h2>Your Dashboard</h2>
-        <Routes>
-          <Route path="/dashboard/home" element={ <Home/>}/>
-        </Routes>
-       <p><a href="Home.jsx">Home</a></p> 
-       
-       <p><a href="NewProduct.jsx">New Product</a></p> 
-       <p><a href=""> Products</a></p>
-       <p><a href="Credits.jsx">Credits</a></p>
         
-        </Dash>
+      <p>  <Link to="/dashboard/home">Home</Link></p>
+      <p>  <Link to="/dashboard/newproduct">New Product</Link></p>
+      <p>  <Link to="/dashboard/products">Products</Link></p>
+      <p>  <Link to="/dashboard/credits">Credits</Link></p>
+      </div>
+              
+      
 
-        <Home/>
-       </Cover>
+        
+       
     
   )
 }

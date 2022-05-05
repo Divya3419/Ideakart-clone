@@ -5,11 +5,11 @@ const Home = () => {
   return (
     <div>
 
-      
-      <Wel>
+
+      <div>
       <h1>Welcome!</h1>
     <Btn>Upload New Product</Btn>
-    </Wel>
+    </div>
       <Three>
         <Box> 0/0 Products
           <br/> Approved</Box> 

@@ -1,13 +1,16 @@
 import React from 'react'
+import { Credit } from '../components/Styled'
 
 const Credits = () => {
   return (
-    <div>
+    
+      <Credit>
       <h1>Credits</h1>
       <p>The amount credited to your account will be shown here!
 
 You can update your account Info</p>
-    </div>
+</Credit>
+    
   )
 }
 
