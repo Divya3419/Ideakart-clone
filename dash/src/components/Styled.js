@@ -2,17 +2,20 @@ import styled ,{css}from "styled-components"
 
 //App
 export const Control=styled.div`
-border:2px solid black;
+
 display:grid;
-grid-template-columns:repeat(2,1fr);
+grid-template-columns: 20% 80%;
 
 width:80%;
 margin:auto;
 margin-top:40px;
 `
 
-//Home
+//Home page
+export const Cover=styled.div`
 
+
+`
 export const Btn=styled.button`
 color:white;
 
@@ -47,17 +50,17 @@ width:300px;
 
 ${(props)=>props.box2 && css`
 background-color:orange;
-color:white;
+
 `}
 
 ${(props)=>props.box3 && css`
 background-color: #e68787;
-color:white;
+
 `}
 
 `
-
+//credit page
 export const Credit=styled.div`
-border:2px solid black;
+font-size:20px;
 
 `
