@@ -27,7 +27,11 @@ const Login = () => {
     if (result.verified) {
       setErrorMessage("");
       loginUser(personDetail);
-      navigate("../logged-in", { replace: true });
+      // navigate("./dropdown")
+      navigate("../", { replace: true });
+      
+  
+     
     } else {
       setErrorMessage(result.error);
     }

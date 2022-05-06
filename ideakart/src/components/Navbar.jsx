@@ -1,8 +1,10 @@
 import "./navbar.css";
+import Dropdown from 'react-dropdown';
+import 'react-dropdown/style.css';
 import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { useGlobalContext } from "../contextAPI";
-
+// import Dropdown from "./pages/dropdown/Dropdown"
 const Navbar = () => {
   //hooks
   const [buttonContent, setButtonContent] = useState("Login");
@@ -25,14 +27,16 @@ const Navbar = () => {
       navigate("./signup");
     } else if (buttonContent === "Log Out") {
       logOutUser();
+      // navigate("./dropdown")
       navigate("./login", { replace: true });
+
     }
   };
 
   const handleClick2 = () => {
    
       navigate("./login");
-    
+     
   };
 
   const handleClick3 = () => {
@@ -43,10 +47,24 @@ const Navbar = () => {
 const handleClick4 = () => {
    
   navigate("./Contact");
+  
 
 };
+const options = [
+  'Dashboard', 'Account Info', 'Notification'
+];
+const handleClick5 = (e)=>{
+  if(e.value==="Dashboard"){
+    navigate("./Contact");
+    console.log("working")
+  }
+}
+const handleClick6 = () => {
+   
+  navigate("./");
+  
 
-
+};
 
 
   // const handleFetchNormalClick = () => {
@@ -58,8 +76,10 @@ const handleClick4 = () => {
 
   return (
     <nav className="navbar-container">
-      <div className="navbar__company-logo">IdealCart</div>
+      <div className="navbar__company-logo"  onClick={handleClick6}>IdealCart</div>
       <div className="navbar__btn-container">
+        <input className="inPut"  placeholder="Search"/>
+        <button className="sBtn">Search</button>
       <h4
           className="navbar__login-signup-logout-btn"
           onClick={handleClick3}>
@@ -87,7 +107,10 @@ const handleClick4 = () => {
         >
           {buttonContent}
         </h4>
-     
+
+        <Dropdown className='dDown' options={options} value="Dashboard" onChange={handleClick5} />
+
+
       </div>
     </nav>
   );

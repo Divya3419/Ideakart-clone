@@ -7,8 +7,7 @@ import LoggedIn from "./pages/logged-in/LoggedIn";
 import Home from "./pages/home/Home";
 import Contact from "./pages/Contact/Contact"
 import About from "./pages/about/About"
-// import FetchNormal from "./pages/fetch/FetchNormal";
-// import FetchWithAuth from "./pages/fetch/FetchWithAuth";
+import Drop from "./pages/drop/Drop"
 import Error from "./pages/error/Error";
 
 function App() {
@@ -23,8 +22,7 @@ function App() {
           <Route path="/signup" element={<SignUp />} />
           <Route path="/login" element={<Login />} />
           <Route path="/logged-in" element={<LoggedIn />} />
-          {/* <Route path="/fetch-normal" element={<FetchNormal />} />
-          <Route path="/fetch-with-auth" element={<FetchWithAuth />} /> */}
+          <Route path="/drop" element={<Drop/>} />
           <Route path="*" element={<Error />} />
         </Routes>
       </BrowserRouter>

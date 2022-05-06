@@ -16,6 +16,8 @@
   font-weight: bold;
   color:white;
   letter-spacing: 1.2px;
+  cursor: pointer;
+  color:yellow
   /* color: var(--text-color-1); */
 
 }
@@ -41,4 +43,14 @@ color:white;
 .navbar__fetch-btn {
   margin-right: 20px;
 
+}
+
+.inPut{
+  width:400px
+}
+
+.sBtn{
+  margin-right:250px;
+  margin-left:.1px;
+  width:90px;
 }
