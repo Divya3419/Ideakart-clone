@@ -1,5 +1,5 @@
 import React from 'react'
-
+import data from "db.json";
 const Products = () => {
   return (
     <div>
@@ -13,7 +13,11 @@ const Products = () => {
 <th style={{padding:"30px"}}>Approval Status</th>
 </tr>
         </thead>
-        
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
         <tbody>
 
         </tbody>
