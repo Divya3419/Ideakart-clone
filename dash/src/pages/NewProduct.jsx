@@ -1,43 +1,58 @@
 import React from 'react'
+import { Input, Select } from '../components/Styled'
 
 const NewProduct = () => {
 
+const handleSubmit = (e) => {
+  alert("hii")
 
+}
   
   return (
     <div>
-      <form >
+      <form onSubmit={handleSubmit}>
       <h1>New Review</h1>
       <div>
       <label>Name</label>
       <br />
-      <input type="text" required />
+      <Input type="text" required />
       </div>
 
       <div>
       <label>Your Experience</label>
       <br />
-      <input type="text" required/>
+      <Input type="text" required/>
       </div>
 
       <div>
       <label>File</label>
       <br />
-      <input type="file" required />
+      <input style={{marginBottom:"20px"}} type="file" required />
       </div>
 
       <div>
       <label>Did you bought it online or offline</label>
       <br />
-      <input type="text" required />
+     <Select >
+       <option value="Online">Online</option>
+       <option value="Offline">Offline</option>
+     </Select>
       </div>
 
       <div>
       <label>Platform</label>
       <br />
-      <input type="text" required />
+      <Select>
+        <option value="">Select Plateform</option>
+        <option value="Amazon">Amazon</option>
+        <option value="Flipkart">Flipkart</option>
+        <option value="SnapDeal">SnapDeal</option>
+        <option value="ShopClues">ShopClues</option>
+        <option value="RelianceDigital">RelianceDigital</option>
+        <option value="Other">Other</option>
+      </Select>
       </div>
-      <input type="submit" />
+      <Input int1 type="submit" />
       </form>
     </div>
   )

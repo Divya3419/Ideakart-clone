@@ -1,4 +1,4 @@
-import styled ,{css}from "styled-components"
+import styled ,{css} from "styled-components"
 
 //App
 export const Control=styled.div`
@@ -57,6 +57,31 @@ ${(props)=>props.box3 && css`
 background-color: #e68787;
 
 `}
+
+`
+
+//new product page
+
+export const Input=styled.input`
+
+width:70%;
+height:40px;
+border-radius:5px;
+margin-bottom:20px;
+
+${(props)=>props.int1 && css`
+
+border:none;
+width:10%;
+height:40px;
+
+`}
+`
+export const Select=styled.select`
+width:70%;
+height:30px;
+border-radius:5px;
+margin-bottom:20px;
 
 `
 //credit page
