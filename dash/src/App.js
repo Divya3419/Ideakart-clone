@@ -1,17 +1,12 @@
 import logo from './logo.svg';
 import './App.css';
-import Dashboard from './components/Dashboard';
-import MainRoute from './Routes/MainRoute';
-import { Control } from './components/Styled';
+import Final from './components/Final';
+
 
 function App() {
   return (
     
-
-      <Control>
-      <Dashboard/>
-      <MainRoute/>
-      </Control>
+<Final/>
     
   );
 }
