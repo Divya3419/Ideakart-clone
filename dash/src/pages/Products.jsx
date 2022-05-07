@@ -1,6 +1,20 @@
 import React from 'react'
-import data from "db.json";
+
 const Products = () => {
+
+  const postData=async()=>{
+    try{
+      let response= await fetch(`http://localhost:3004/product`)
+      let data= await response.json()
+      //check all data
+      console.log(data)
+    }
+    catch(err){
+      console.log(err);
+    }
+   }
+
+   
   return (
     <div>
       <h1>Products</h1>
