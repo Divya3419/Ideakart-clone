@@ -8,7 +8,7 @@ const Login = () => {
     password: "",
   });
   const [errorMessage, setErrorMessage] = useState("");
-  const { verifyUser, loginUser, store } = useGlobalContext();
+  const { verifyUser, loginUser } = useGlobalContext();
   const navigate = useNavigate();
 
   //event handlers

@@ -4,6 +4,7 @@ import 'react-dropdown/style.css';
 import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { useGlobalContext } from "../contextAPI";
+
 // import Dropdown from "./pages/dropdown/Dropdown"
 const Navbar = () => {
   //hooks
@@ -55,9 +56,16 @@ const options = [
 ];
 const handleClick5 = (e)=>{
   if(e.value==="Dashboard"){
-    navigate("./Contact");
+    navigate("./final");
     console.log("working")
   }
+  if(e.value==="Account Info"){
+    navigate("./accountinfo");
+    console.log("working")
+  }
+
+
+  ///accountinfo
 }
 const handleClick6 = () => {
    
@@ -78,7 +86,7 @@ const handleClick6 = () => {
     <nav className="navbar-container">
       <div className="navbar__company-logo"  onClick={handleClick6}>IdealCart</div>
       <div className="navbar__btn-container">
-        <input className="inPut"  placeholder="Search"/>
+        <input className="inPut" placeholder="Search"/>
         <button className="sBtn">Search</button>
       <h4
           className="navbar__login-signup-logout-btn"
@@ -113,6 +121,7 @@ const handleClick6 = () => {
 
       </div>
     </nav>
+
   );
 };
 
