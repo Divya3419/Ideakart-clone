@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { Input, Select } from '../components/Styled'
+import { Input, Select, Main } from '../components/Styled'
 
 const NewProduct = () => {
   const [productData,setProductdata]=useState({});
@@ -29,7 +29,7 @@ const handleChange=(e)=>{
 }
   
   return (
-    <div>
+    <Main>
       <form onSubmit={handleSubmit}>
       <h1>New Review</h1>
       <div>
@@ -75,7 +75,7 @@ const handleChange=(e)=>{
       </div>
       <Input int1 type="submit" />
       </form>
-    </div>
+    </Main>
   )
 }
 

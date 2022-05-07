@@ -13,7 +13,7 @@ margin-top:40px;
 
 //Home page
 export const Cover=styled.div`
-
+margin-left:40px;
 
 `
 export const Btn=styled.button`
@@ -87,5 +87,10 @@ margin-bottom:20px;
 //credit page
 export const Credit=styled.div`
 font-size:20px;
+margin-left:40px;
+margin-bottom:250px;
+`
 
+export const Main = styled.div`
+margin-left:70px;
 `

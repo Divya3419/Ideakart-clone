@@ -10,9 +10,12 @@ text-align:left;
 margin-left:210px;
 `
 
-const H1=styled.h1`
+const H1=styled.p`
+font-size:30px;
 margin:auto;
-margin-left:370px;
+margin-left:-45px;
+margin-top:30px;
+margin-bottom:20px;
 `
 
 const Container=styled.div`

@@ -3,6 +3,12 @@ import styles from './Account.module.css'
 // import {Footer} from '../Components/Footer'
 
 export const AccountInfo = () => {
+ const handleSubmit = ()=>{
+    alert("Account details captured")
+ }
+
+
+
   return (
     <>
     <div className={styles.AccountInfo_main_div}>
@@ -65,7 +71,7 @@ export const AccountInfo = () => {
 
     <input className={styles.AccountInfo_input} type="text" />
 
-      <button className ={styles.AccountInfo_button}>Create User account</button>
+      <button className ={styles.AccountInfo_button} onClick={handleSubmit} >Create User account</button>
       
     </div>
       

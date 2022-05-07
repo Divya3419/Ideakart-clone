@@ -1,8 +1,16 @@
 import React from 'react'
 import styles from './FooterStyles.module.css'
-
+import { useNavigate } from "react-router-dom";
 
 export const MoneyOnline = () => {
+   const navigate = useNavigate();
+const handleClick = ()=>{
+   navigate("/dashboard/home")
+}
+
+
+
+
   return (
       <>
       <div className={styles.Earn_Money_Online}>
@@ -102,7 +110,7 @@ export const MoneyOnline = () => {
         <div>
            <iframe className={styles.image} src="https://www.youtube.com/embed/TfQyg-DSHBo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
-        <button className= {styles.button}>Get Started!</button>
+        <button className= {styles.button} onClick={handleClick} >Get Started!</button>
 
                        {/* here im importing footer  */}
 
