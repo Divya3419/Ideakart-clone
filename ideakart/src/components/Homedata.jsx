@@ -23,7 +23,7 @@ margin:auto;
 width:75%;
 
  img{
-     width:238px;
+     width:100%;
      height:341px;
 
  }

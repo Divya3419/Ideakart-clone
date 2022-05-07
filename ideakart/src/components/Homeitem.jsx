@@ -5,6 +5,12 @@ import styled from 'styled-components'
 const Title=styled.div`
 text-align:left;
 padding-left:10px;
+-webkit-line-clamp: 2;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    text-overflow: ellipsis;
+    overflow: hidden;
+
 `
 
 const Price=styled.div`

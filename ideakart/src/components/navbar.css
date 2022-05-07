@@ -46,7 +46,8 @@ color:white;
 }
 
 .inPut{
-  width:400px
+  width:400px;
+  margin-right:-10px;
 }
 
 .sBtn{

@@ -47,31 +47,32 @@ const Navbar = () => {
 };
 const handleClick4 = () => {
    
-  navigate("./Contact");
+  navigate("./Contactpage");
   
 
 };
 const options = [
-  'Dashboard', 'Account Info', 'Notification'
+  'Dashboard', 'Account-Info', 'Notification'
 ];
 const handleClick5 = (e)=>{
   if(e.value==="Dashboard"){
     navigate("./final");
-    console.log("working")
+    
   }
-  if(e.value==="Account Info"){
+  if(e.value==="Account-Info"){
     navigate("./accountinfo");
-    console.log("working")
+   
   }
-
+  if(e.value==="Notification"){
+    navigate("./Notification");
+   
+  }
+//Notification
 
   ///accountinfo
 }
-const handleClick6 = () => {
-   
+const handleClick6 = () => {   
   navigate("./");
-  
-
 };
 
 
@@ -84,7 +85,7 @@ const handleClick6 = () => {
 
   return (
     <nav className="navbar-container">
-      <div className="navbar__company-logo"  onClick={handleClick6}>IdealCart</div>
+      <div className="navbar__company-logo"  onClick={handleClick6}>IDEAKART</div>
       <div className="navbar__btn-container">
         <input className="inPut" placeholder="Search"/>
         <button className="sBtn">Search</button>
@@ -107,7 +108,7 @@ const handleClick6 = () => {
            <h4
           className="navbar__login-signup-logout-btn"
           onClick={handleClick2}>
-         Log in
+         Login
         </h4>
         <h4
           className="navbar__login-signup-logout-btn"

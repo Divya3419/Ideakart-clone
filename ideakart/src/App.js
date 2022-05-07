@@ -16,14 +16,14 @@ import {MoneyOnline} from './components/MoneyOnline';
 //RefundPolicy
 //MoneyOnline
 
-import Contact from "./pages/Contact/Contact"
+import Contactpage from "./pages/Contact/Contactpage"
 import About from "./pages/about/About"
 import {AccountInfo} from "./pages/AccountInfo/AccountInfo"
 import Drop from "./pages/drop/Drop"
 import Error from "./pages/error/Error";
 import Final from './components/Final';
 import {Footer} from './components/Footer'
-
+import Notification from "./pages/notifications/Notification";
 
 // import { Control } from './components/Styled';
 // import Dashboard from './components/Dashboard';
@@ -95,9 +95,9 @@ function App() {
 
           <Route path="/" element={<Homedata />} />
           <Route path="/about" element={<About />} />
-          <Route path="/Contact" element={<Contact />} />
+          <Route path="/Contactpage" element={<Contactpage />} />
           <Route path="/accountinfo" element={<AccountInfo />} />
-
+          <Route path="/Notification" element={<Notification />} />
 
 
 
