@@ -1,11 +1,12 @@
 import React from 'react';
 import './Contactpage.css';
 // import {DB} from './firebase';
-
+import { useNavigate } from "react-router-dom";
 const Contactpage = ()=>{
-
+    const navigate = useNavigate();
 const handleSubmit = ()=>{
     alert("Your details are captured, we will get back to you shortly")
+    navigate("/")
 }
 
 

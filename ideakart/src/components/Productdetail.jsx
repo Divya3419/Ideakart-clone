@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { useEffect } from "react";
 import { useParams } from "react-router-dom";
-
+import { useNavigate } from "react-router-dom";
 import styled from "styled-components";
 
 const Prod = styled.div`
@@ -75,6 +75,7 @@ box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 `
 
 const Productdetail = () => {
+  const navigate = useNavigate();
   const { id } = useParams();
   const [data, setData] = useState([]);
   const getData = async () => {
@@ -89,6 +90,14 @@ const Productdetail = () => {
   useEffect(() => {
     getData();
   }, []);
+
+
+
+const handleChange =()=>{
+navigate("/accountinfo")
+}
+
+
   return (
     <Prod>
       <D1>
@@ -99,7 +108,7 @@ const Productdetail = () => {
         <Pri>
           <p>Rs. {data.price}</p>
           
-          <button>Buy</button>
+          <button onClick={handleChange} >Buy</button>
         </Pri>
         <H>
           {data.h1}

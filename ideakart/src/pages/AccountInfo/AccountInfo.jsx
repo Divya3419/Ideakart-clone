@@ -72,7 +72,7 @@ export const AccountInfo = () => {
     <input className={styles.AccountInfo_input} type="text" />
 
       <button className ={styles.AccountInfo_button} onClick={handleSubmit} >Create User account</button>
-      
+      <button className ={styles.AccountInfo_button} onClick={handleSubmit} >Pay and Buy</button>
     </div>
       
 
