@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { FaCartPlus,FaListUl } from 'react-icons/fa';
 import styled from 'styled-components';
+import styles from './Search.module.css';
 
 
 // keep the add to cart component here
@@ -9,14 +10,21 @@ const Detl=styled.div`
 display:flex;
 justify-content:space-around;
 border-top:0.5px solid grey;
-margin-top:15px;
+margin-top:1px;
 margin-bottom:20px;
+width:90%;
+margin-left:5%;
 `
 const View=styled.div`
 margin-top:15px;
+display:flex;
+text-decoration: none;
 `
 const More=styled.div`
 margin-top:15px;
+display:flex;
+text-decoration: none;
+
 `
 
 const Detail = (props) => {
@@ -28,12 +36,20 @@ const Detail = (props) => {
   <Detl >
    
     <View>
-      <FaCartPlus/>
-    <Link to={`/${id}`} > View Now</Link>
+      <div>
+         <FaCartPlus className = {styles.Detail_page_icon}/>
+      </div>
+      <div>
+         <Link className = {styles.Detail_page_View_now} to={`/${id}`} > View Now</Link>
+      </div>
     </View>
     <More>
-    <FaListUl/>
-    <Link to={`/${id}`}>More Details</Link>
+     <div>
+     <FaListUl className = {styles.Detail_page_icon}/>
+     </div>
+    <div>
+     <Link className = {styles.Detail_page_View_now} to={`/${id}`}>More Details</Link>
+    </div>
   
     </More>
    

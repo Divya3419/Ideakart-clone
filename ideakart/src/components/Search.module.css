@@ -1,0 +1,86 @@
+.main_div{
+    margin-top: 50px;
+    display:grid;
+    margin-left:10%;
+    grid-template-columns: repeat(4,21%);
+    gap: 25px;
+   
+ }
+ .main_div > div{
+    border: 1px solid gray;
+ }
+ .image{
+    width: 100%;
+    height: 350px;
+ }
+ .searchText_input{
+   padding-top:50px;
+    text-align: center;
+ }
+ .searchText_input > input {
+    height: 40px;
+    width: 250px;
+    font-size: 23px;
+ }
+ .searchText_input > label {
+    font-size:35px;
+    margin-right: 30px;
+ 
+ }
+.title_name_div{
+   height: 60px;
+   padding-top: 20px;
+ }
+ .title_name_h5{
+    margin-top: 10px;
+    text-align:left;
+    padding-left:15px;
+    padding-right:8px;
+    -webkit-line-clamp: 2;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    text-overflow: ellipsis;
+    overflow: hidden;
+
+ }
+.title_price_div{
+   height: 30px;
+  
+ }
+ .title_price_p{
+   margin-top:10px;
+   color:#75c3e3;
+   padding-left:15px;
+   
+ }
+
+ .all_mapping_page_main_div{
+  margin-top:-21px;
+  height: 155px;
+ }
+.all_mapping_page_main_div:hover{
+ background-color:rgb(238, 240, 207);
+ 
+}
+
+
+
+        /* here i wrote style page css2 */
+
+ .Detail_page_icon{
+  margin-right: 12px;
+  margin-top: 2.5px;
+  
+ }
+ .Detail_page_View_now{
+    text-decoration: none;
+    
+ }
+ .Detail_page_View_now:hover{
+   text-decoration: underline;
+   margin-bottom: 18px;
+ }
+
+ /* .Homedata_all_mapping_page_main_div:hover{
+   background-color:rgb(238, 240, 207);
+ } */
