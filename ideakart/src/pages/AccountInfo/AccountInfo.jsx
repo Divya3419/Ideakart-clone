@@ -1,12 +1,18 @@
 import React from 'react'
 import styles from './Account.module.css'
+import { useNavigate } from 'react-router-dom'
 // import {Footer} from '../Components/Footer'
 
 export const AccountInfo = () => {
+   const navigate = useNavigate()
  const handleSubmit = ()=>{
     alert("Account details captured")
+    
  }
-
+ const handleSubmit2 = ()=>{
+   alert("Payment done")
+   navigate("/")
+}
 
 
   return (
@@ -72,7 +78,7 @@ export const AccountInfo = () => {
     <input className={styles.AccountInfo_input} type="text" />
 
       <button className ={styles.AccountInfo_button} onClick={handleSubmit} >Create User account</button>
-      <button className ={styles.AccountInfo_button} onClick={handleSubmit} >Pay and Buy</button>
+      <button className ={styles.AccountInfo_button} onClick={handleSubmit2} >Pay and Buy</button>
     </div>
       
 

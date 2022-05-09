@@ -21,7 +21,7 @@ margin-bottom:20px;
 const Container=styled.div`
 display: grid;
 grid-template-columns: repeat(4,1fr);
-gap:  20px;
+gap:  10px;
 margin:auto;
 width:75%;
 
