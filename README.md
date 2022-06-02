@@ -52,7 +52,7 @@ Chandan Kumar
 * LinkedIn : [LinkedIn](https://www.linkedin.com/in/chandan-kumar-8b0284205/)
 
 Atul Kumar 
-* Github : AtuleKumar69
+* Github : AtulKumar69
 * LinkedIn : [LinkedIn](https://www.linkedin.com/in/atul-kumar-panigrahi-a7969121a/)
 
 Divya 
